@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import img1 from "../src/assest/img1.jpg";
+import Sighup from "./Components/Sighup";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-5 mt-5">
+            <Sighup />
+          </div>
+          <div className="col-sm-7 ">
+            <img src={img1} className="img-fluid w-100"></img>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
